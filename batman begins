@@ -1,1 +1,23 @@
+public class ComplexNumbers {
+    private int realpart;
+    private int imaginarypart;
+    ComplexNumbers(int r,int i){
+        this.realpart=r;
+        this.imaginarypart=i;
+    }
+    void plus(ComplexNumbers x){
+        this.realpart=x.realpart+this.realpart;
+        this.imaginarypart=x.imaginarypart+this.imaginarypart;
+    }
+    void multiply(ComplexNumbers s){
+        this.realpart=this.realpart*(s.realpart)+(-this.imaginarypart*(s.imaginarypart));
+    }
+    void print(){
+        System.out.println(this.realpart+" + "+"i"+this.imaginarypart);
+    }
+
+
+
+
+}
 
