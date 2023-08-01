@@ -11,6 +11,7 @@ public class ComplexNumbers {
     }
     void multiply(ComplexNumbers s){
         this.realpart=this.realpart*(s.realpart)+(-this.imaginarypart*(s.imaginarypart));
+        this.imaginarypart=this.realpart*(s.imaginarypart)+this.imaginarypart*(s.realpart);
     }
     void print(){
         System.out.println(this.realpart+" + "+"i"+this.imaginarypart);
@@ -20,4 +21,3 @@ public class ComplexNumbers {
 
 
 }
-
